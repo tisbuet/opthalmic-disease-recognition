@@ -135,7 +135,7 @@ def create_model(x, y):
     model.add(Dropout(0.15))
     model.add(Dense(y.shape[1], activation='sigmoid'))
 
-    model.compile(loss='category_crossentropy', optimizer='adam', metrics=["accuracy"])
+    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=["accuracy"])
     return model
 
 file_path = 'best.h5'
@@ -155,7 +155,6 @@ for train_index, test_index in kf.split(x):
     t_x, val_x = x[train_index], x[test_index]
     t_y, val_y = y[train_index], y[test_index]
 
-    model = None
     model = create_model(t_x, t_y)
     
     results = model.fit_generator(
