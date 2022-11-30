@@ -178,7 +178,7 @@ for i in range(100//k):
     model = create_model(x, y)
     results = model.fit(t_x, t_y, validation_data=(val_x, val_y), epochs=50, batch_size = 32, shuffle=True, verbose=2,
                         callbacks = callbacks_list)
-    break
+
 finemodel=create_model(x, y)
 finemodel.load_weights(file_path)
 for layer in finemodel.layers[:-4]:
