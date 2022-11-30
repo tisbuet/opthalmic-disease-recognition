@@ -1,0 +1,6 @@
+pandas
+tqdm
+keras
+matplotlib
+tensorflow-gpu
+tqdm
