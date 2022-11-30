@@ -130,4 +130,6 @@ dmypy.json
 .vscode-upload.json
 *.jpg
 *.xlsx
+*.h5
 train
+validation

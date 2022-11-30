@@ -1,6 +1,5 @@
 pandas
 tqdm
-keras
+keras==2.4.3
 matplotlib
-tensorflow-gpu
-tqdm
+tensorflow-gpu==2.3.0
