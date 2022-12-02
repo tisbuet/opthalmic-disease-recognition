@@ -133,3 +133,4 @@ dmypy.json
 *.h5
 train
 validation
+*tfevents*
